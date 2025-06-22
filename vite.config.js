@@ -1,7 +1,9 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+// vite.config.js
+import { defineConfig } from 'vite'
 
 export default defineConfig({
-  plugins: [react()],
-  base: './'
-});
+  base: '/epub-reader/', // el nombre exacto de tu repositorio
+  build: {
+    outDir: 'dist'
+  }
+})
